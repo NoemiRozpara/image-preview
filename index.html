@@ -1,0 +1,27 @@
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+	<main>
+		<span class="fancy-font"> Paste link in the field below... </span>
+		<input id="linkText" type="text" />
+		<button onClick="testImage()"> Upload </button>
+		<div id="errorContainer"> </div>
+		<div 
+			id="droppable" 
+			onDragOver="allowDrop(event)" 
+			onDrop="drop(event)"
+		>
+			<span class="fancy-font"> ... or drop image here! </span>
+		</div>
+		<div id="preview" >
+			<img id="previewImg"/>
+		</div>
+	</main>
+	<footer>
+		<script src="js/scripts.js"></script>
+	</footer>
+</body>
